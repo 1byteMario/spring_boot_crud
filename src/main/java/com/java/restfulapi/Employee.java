@@ -4,7 +4,7 @@ import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
 
-public class employee {
+public class Employee {
 	
 	@Id
     @GeneratedValue(strategy = GenerationType.AUTO)
@@ -14,6 +14,7 @@ public class employee {
 	String lastName;
 	String deptName;
 	String hireDate;
+
 	public String getId() {
 		return id;
 	}
@@ -44,6 +45,4 @@ public class employee {
 	public void setHireDate(String hireDate) {
 		this.hireDate = hireDate;
 	}
-	
-
 }
